@@ -8,11 +8,32 @@
 </head>
 <body>
     <div class="div-card">
-        <form action="">
-            <h2>Nombre</h2>
-            <input type="text" class="imput-text">
-            <h2>Email</h2>
-            <input type="text" class="imput-text">
+        <form action="" class="form-card">
+            <div>
+                <h2>Nombre</h2>
+                <input type="text" class="imput-text" placeholder="Pedro Gonzales">
+                <h2>Email</h2>    
+                <input type="text" class="imput-text" type="email" placeholder="ejemplo@example.com">  
+            </div>
+            <h2>Razon</h2>
+            <div class="div-card-buttons">
+                <input type="radio" id="opcion1" name="opcion" value="opcion1">
+                <label for="opcion1">Queja  </label>
+                <input type="radio" id="opcion2" name="opcion" value="opcion2">
+                <label for="opcion2">Agendar Cita</label>
+                <input type="radio" id="opcion2" name="opcion" value="opcion2">
+                <label for="opcion2">Aclaracion</label>
+            </div>      
+            <h2>Detalles</h2>
+            <textarea id="texto" name="texto" maxlength="500"></textarea><br>
+            <h2>Como nos conociste</h2>
+            <select id="opciones">
+                <option value="opcion1">Aun no</option>
+                <option value="opcion2">Internet</option>
+                <option value="opcion3">Recomendacion</option>
+            </select>
+            <input type="submit" value="Enviar" class="button-33" role="button">
+            
         </form>
     </div>
 </body>
